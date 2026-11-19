@@ -1,13 +1,13 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the container
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -22,5 +22,5 @@ app.MapGet("/", () => Results.Redirect("/swagger"));
 
 app.Run();
 
-// Hỗ trợ WebApplicationFactory trong Integration Tests
+// Required for WebApplicationFactory in Integration Tests
 public partial class Program { }

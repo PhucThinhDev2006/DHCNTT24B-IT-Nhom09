@@ -1,6 +1,6 @@
 # AgriOCOP — Hệ thống quản lý kinh doanh truy xuất nguồn gốc sản phẩm nông sản chuẩn OCOP 3 miền tại Trường Đại học Đồng Tháp
 
-[![CI Build & Test](https://github.com/PhucThinhDev2006/DHCNTT24B-IT-Nhom09/actions/workflows/ci.yml/badge.svg)](https://github.com/PhucThinhDev2006/DHCNTT24B-IT-Nhom09/actions/workflows/ci.yml)
+[![CI Build & Test](https://github.com/PhucThinhDev2006/IN421104-Nhom09/actions/workflows/ci.yml/badge.svg)](https://github.com/PhucThinhDev2006/IN421104-Nhom09/actions/workflows/ci.yml)
 [![Coverage](https://img.shields.io/badge/Coverage-%E2%89%A580%25-brightgreen.svg)]()
 [![.NET Version](https://img.shields.io/badge/.NET-10.0-blue.svg)](https://dotnet.microsoft.com/)
 [![Database](https://img.shields.io/badge/PostgreSQL-16-blue.svg)](https://www.postgresql.org/)
@@ -11,7 +11,7 @@
 > **Giảng viên hướng dẫn**: ThS. Nguyễn Tuấn Kiệt — Trường Đại học Đồng Tháp.  
 > **Mã đề tài**: **ĐT08-AgriOCOP (Đề xuất mở rộng)**  
 > **Nhóm thực hiện**: **Nhóm 09**  
-> **Kho mã nguồn GitHub**: [https://github.com/PhucThinhDev2006/DHCNTT24B-IT-Nhom09](https://github.com/PhucThinhDev2006/DHCNTT24B-IT-Nhom09)  
+> **Kho mã nguồn GitHub**: [https://github.com/PhucThinhDev2006/IN421104-Nhom09](https://github.com/PhucThinhDev2006/IN421104-Nhom09)  
 
 ---
 
@@ -37,8 +37,8 @@
 
 ```bash
 # 1. Clone kho mã nguồn chính thức của Nhóm 09
-git clone https://github.com/PhucThinhDev2006/DHCNTT24B-IT-Nhom09.git
-cd DHCNTT24B-IT-Nhom09
+git clone https://github.com/PhucThinhDev2006/IN421104-Nhom09.git
+cd IN421104-Nhom09
 
 # 2. Khởi chạy hệ thống bằng Docker Compose (Tự động build API, chạy Postgres, chạy Migrations và Seeding dữ liệu)
 docker compose up -d --build
