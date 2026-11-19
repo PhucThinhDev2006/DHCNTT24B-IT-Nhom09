@@ -103,10 +103,10 @@ Hệ thống đã tự động gieo sẵn dữ liệu mẫu (`SeedAsync`) cho t�
 
 | Vai trò | Email đăng nhập | Mật khẩu mặc định | Quyền hạn và Mô tả |
 | :--- | :--- | :--- | :--- |
-| **Quản trị viên HTX (Admin)** | `admin@agriocop.vn` | `Admin@123456` | Quản lý hệ thống, duyệt nhà vườn, quản lý danh mục OCOP 3 miền. |
-| **Kỹ sư kiểm định (Inspector)** | `inspector@agriocop.vn` | `Inspector@123456` | Giám sát kỹ thuật, kiểm tra vườn, chốt khóa nhật ký nông vụ (`Locked`). |
-| **Xã viên / Nhà vườn (Farmer)** | `farmer.caolanh@agriocop.vn` | `Farmer@123456` | Quản lý Lô Xoài Cát Chu Cao Lãnh, ghi nhật ký phân bón, phun thuốc BVTV. |
-| **Khách hàng / Sinh viên (Customer)** | `thinh.student@dthu.edu.vn` | `Customer@123456` | Đặt mua nông sản đặc sản OCOP, xem lịch sử đơn hàng. |
+| **Quản trị viên HTX (Admin)** | `xxxxxx` | `xxxxxx` | Quản lý hệ thống, duyệt nhà vườn, quản lý danh mục OCOP 3 miền. |
+| **Kỹ sư kiểm định (Inspector)** | `xxxxxx` | `xxxxxx` | Giám sát kỹ thuật, kiểm tra vườn, chốt khóa nhật ký nông vụ (`Locked`). |
+| **Xã viên / Nhà vườn (Farmer)** | `xxxxxx` | `xxxxxx` | Quản lý Lô Xoài Cát Chu Cao Lãnh, ghi nhật ký phân bón, phun thuốc BVTV. |
+| **Khách hàng / Sinh viên (Customer)** | `xxxxxx` | `xxxxxx` | Đặt mua nông sản đặc sản OCOP, xem lịch sử đơn hàng. |
 | **Khách vãng lai (Public)** | *(Không cần đăng nhập)* | *(Không cần mật khẩu)* | Quét mã QR tem nhãn để tra cứu dòng thời gian canh tác sạch. |
 
 > *Mật khẩu đều được băm an toàn bằng thuật toán **Argon2id**. Xác thực qua chuẩn **JWT (Access Token & Refresh Token)**.*
@@ -135,10 +135,10 @@ dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Thresho
 
 | STT | MSSV | Họ và tên | Vai trò | Nhiệm vụ phụ trách cụ thể (Chức năng, Lớp, Tệp mã nguồn) | Chữ ký |
 | :---: | :---: | :--- | :---: | :--- | :---: |
-| **1** | **0024417329** | **Nguyễn Huỳnh Phúc Thịnh** | **Nhóm trưởng** | - Quản trị kiến trúc Clean Architecture, cấu hình Docker & GitHub Actions CI.<br>- **Bảo mật & Xác thực**: `AuthService`, `JwtTokenGenerator`, băm mật khẩu `Argon2idPasswordHasher`, phân quyền Role/Policy.<br>- **Quản lý Thu hoạch & Tem QR**: `HarvestBatch`, sinh tem QR truy xuất (`QRCodeService`), Controller tra cứu công khai `TraceabilityPublicController`.<br>- Viết Unit Test cho tầng Xác thực và Động cơ QR. | *(Ký tên)* |
-| **2** | **0024417525** | **Huỳnh Trần Thanh Phương** | Thành viên | - **Quản lý Mùa vụ & Quy tắc PHI (QT01)**: Thực thể `CropBatch`, logic tính toán thời gian cách ly thuốc BVTV, ném ngoại lệ `PreHarvestIntervalViolationException`.<br>- **Quản lý Danh mục Nông sản OCOP 3 miền**: `OcopProduct`, `Cooperative`, `Farm` (Mã số vùng trồng PUC).<br>- Viết Unit Test cho quy tắc cách ly PHI. | *(Ký tên)* |
-| **3** | **0024417954** | **Võ Quốc Bảo** | Thành viên | - **Nhật ký đồng ruộng điện tử (QT02)**: Thực thể `FarmingLog`, cơ chế khóa bất biến nhật ký khi kiểm định viên duyệt (`FarmingLogLockedException`).<br>- **Tầng Infrastructure & Database**: Cấu hình EF Core 10 (`AgriOCOPDbContext`), Fluent API mapping, Migrations và Seeding dữ liệu.<br>- Viết Unit Test cho nhật ký canh tác. | *(Ký tên)* |
-| **4** | **0024415463** | **Đặng Hiếu** | Thành viên | - **Kinh doanh & Đơn hàng OCOP (QT03, QT05)**: Thực thể `Order`, `OrderItem`, kiểm soát tồn kho nông sản tươi an toàn.<br>- **Báo cáo tối ưu Dapper**: Viết truy vấn SQL thuần `DapperTraceabilityReportQuery` thống kê sản lượng HTX và lịch sử lô hàng.<br>- Viết Integration Test cho luồng đặt hàng và báo cáo. | *(Ký tên)* |
+| **1** | `002441xxxx` | **[Thành viên 01]** | **Nhóm trưởng** | - Quản trị kiến trúc Clean Architecture, cấu hình Docker & GitHub Actions CI.<br>- **Bảo mật & Xác thực**: `AuthService`, `JwtTokenGenerator`, băm mật khẩu `Argon2idPasswordHasher`, phân quyền Role/Policy.<br>- **Quản lý Thu hoạch & Tem QR**: `HarvestBatch`, sinh tem QR truy xuất (`QRCodeService`), Controller tra cứu công khai `TraceabilityPublicController`.<br>- Viết Unit Test cho tầng Xác thực và Động cơ QR. | *(Ký tên)* |
+| **2** | `002441xxxx` | **[Thành viên 02]** | Thành viên | - **Quản lý Mùa vụ & Quy tắc PHI (QT01)**: Thực thể `CropBatch`, logic tính toán thời gian cách ly thuốc BVTV, ném ngoại lệ `PreHarvestIntervalViolationException`.<br>- **Quản lý Danh mục Nông sản OCOP 3 miền**: `OcopProduct`, `Cooperative`, `Farm` (Mã số vùng trồng PUC).<br>- Viết Unit Test cho quy tắc cách ly PHI. | *(Ký tên)* |
+| **3** | `002441xxxx` | **[Thành viên 03]** | Thành viên | - **Nhật ký đồng ruộng điện tử (QT02)**: Thực thể `FarmingLog`, cơ chế khóa bất biến nhật ký khi kiểm định viên duyệt (`FarmingLogLockedException`).<br>- **Tầng Infrastructure & Database**: Cấu hình EF Core 10 (`AgriOCOPDbContext`), Fluent API mapping, Migrations và Seeding dữ liệu.<br>- Viết Unit Test cho nhật ký canh tác. | *(Ký tên)* |
+| **4** | `002441xxxx` | **[Thành viên 04]** | Thành viên | - **Kinh doanh & Đơn hàng OCOP (QT03, QT05)**: Thực thể `Order`, `OrderItem`, kiểm soát tồn kho nông sản tươi an toàn.<br>- **Báo cáo tối ưu Dapper**: Viết truy vấn SQL thuần `DapperTraceabilityReportQuery` thống kê sản lượng HTX và lịch sử lô hàng.<br>- Viết Integration Test cho luồng đặt hàng và báo cáo. | *(Ký tên)* |
 
 ---
 
