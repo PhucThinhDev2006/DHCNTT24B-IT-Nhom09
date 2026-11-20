@@ -5,7 +5,7 @@ namespace AgriOCOP.Domain.Enums;
 public enum CropBatchStatus
 {
     /// <sumary> Đang lên kế hoạch canh tác </sumary>
-    Plamned = 1,
+    Planned = 1,
     /// <sumary> Đang trong giai đoạn chăm sóc, sinh trưởng </sumary>
     Growing = 2,
     /// <sumary> Đủ thời gian cách ly thuốc BVTV, sẵn sàng thu hoạch </sumary>
