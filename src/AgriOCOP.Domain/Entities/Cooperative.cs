@@ -52,7 +52,7 @@ public class Cooperative : BaseEntity
         // Tự động cập nhật mốc thời gian sửa đổi (thừa hưởng từ BaseEntity)
         MarkAsUpdated();
     }
-      /// <summary> Tạm ngưng hoạt động của HTX </summary>
+    /// <summary> Tạm ngưng hoạt động của HTX </summary>
     public void Deactivate()
     {
         IsActive = false;
